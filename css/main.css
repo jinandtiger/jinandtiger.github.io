@@ -37,3 +37,9 @@ h1.load-text{
     left: 42%;
     top:60px;
 }
+
+.spinner{
+    position: absolute;
+    left: 49%;
+    top:15%;
+}
