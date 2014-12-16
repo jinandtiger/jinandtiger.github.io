@@ -23,6 +23,11 @@
         <![endif]-->
 
         <!-- Add content here -->
+        <div id="preloader">
+        <div id="status"></div>
+            <h1 class=" load-text animated fadeIn">Loading...</h1>
+            <img class="loader"src="img/assets/output_nFFBCG.gif">
+        </div>
         <h1>COMING SOON!</h1>
 
         <!-- No content below here -->
@@ -40,5 +45,15 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X');ga('send','pageview');
         </script>
+        <!-- Preloader -->
+    <script type="text/javascript">
+      //<![CDATA[
+          $(window).load(function() { // makes sure the whole site is loaded
+          $('#status').fadeOut(); // will first fade out the loading animation
+          $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+          $('body').delay(2300).css({'overflow':'visible'});
+        })
+      //]]>
+    </script>
     </body>
 </html>
